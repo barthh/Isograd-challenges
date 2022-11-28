@@ -11,8 +11,7 @@ int main() {
     char s[n];
 	int v[n], total = 0;
     
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int u,v;
         scanf("%d%d", &u,&v) == 0 ;
         total += u;

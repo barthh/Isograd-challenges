@@ -11,8 +11,7 @@ int main() {
     
     int max = 0;
     
-    for(int i = 0; i < n; i++)
-    {
+    for(int i = 0; i < n; i++) {
         int m;
         scanf("%d", &m)== 0 ;
         if(m > max) max = m;

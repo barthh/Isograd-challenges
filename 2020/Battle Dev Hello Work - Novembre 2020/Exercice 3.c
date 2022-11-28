@@ -10,24 +10,18 @@ int main() {
     scanf("%d", &n) == 0 ;
     
     int agentSup[n-1], inf, sup, rang[10] = {0};
-    
-    for(int i = 0; i < n-1; i++)
-    {
+
+    for(int i = 0; i < n-1; i++) {
         scanf("%d %d",&inf,&sup) == 0;
         agentSup[inf] = sup;
     }
     
-    
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int numRang = 0, agent = i;
-        
-        while(agent != 0)
-        {
+        while(agent != 0) {
             agent = agentSup[agent];
             numRang++;
-        }
-        
+        }   
         rang[numRang]++;
     }
     

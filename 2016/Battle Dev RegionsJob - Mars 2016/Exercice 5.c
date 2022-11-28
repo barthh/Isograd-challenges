@@ -12,8 +12,7 @@ int main() {
     for(int i = 0; i < n ; i++) scanf("%d", &v[i]) == 0 ;
     
     unsigned long long int total = 0;
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int d = 0;
         for(int j = i + 1; j < n; j++)
         {

@@ -13,9 +13,7 @@ int main() {
 	int cumul = 0;
 	
     for(int i = 0; i < n ; i++)
-    {
         if(s[i] != s2[i]) cumul++;
-	}
     
     if(cumul > 3) printf("KO");
     else printf("OK");

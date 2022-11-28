@@ -10,20 +10,16 @@ int main() {
     
     int v[n],w[n];
     
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         scanf("%d", &v[i])== 0 ;
         
         if(i == 0) w[0] = 15;
-        else
-        {
-            if(v[i] > v[i-1])
-            {
+        else {
+            if(v[i] > v[i-1]) {
                 if(w[i-1] > 10) w[i] = 20;
                 else w[i] = 15;
             }
-            if(v[i] < v[i-1])
-            {
+            if(v[i] < v[i-1]) {
                 if(w[i-1] < 10) w[i] = 0;
                 else w[i] = 5;
             }
@@ -33,8 +29,7 @@ int main() {
 	}
 
     int total = 0;
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         total += w[i];
 	}
     

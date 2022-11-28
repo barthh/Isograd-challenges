@@ -12,20 +12,17 @@ int main() {
     for(int i = 0; i < n ; i++)
         scanf("%d", &pyl[i]) == 0;
     
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int total = 0, max = 0;
         for(int j = i - 1; j >= 0 ; j--)
-            if(pyl[j] > max)
-            {
+            if(pyl[j] > max) {
                 total++;
                 max = pyl[j];
             }
         
         max = 0;
         for(int j = i + 1; j < n ; j++)
-            if(pyl[j] > max)
-            {
+            if(pyl[j] > max) {
                 total++;
                 max = pyl[j];
             }

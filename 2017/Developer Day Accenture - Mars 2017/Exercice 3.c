@@ -10,8 +10,7 @@ int main() {
 
 	int v[4] = {0};
     
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int h,m;
         scanf("%d:%d", &h,&m) == 0 ;
 
@@ -28,8 +27,7 @@ int main() {
     int max = 0, val;
     
     for(int i = 0; i < 4 ; i++)
-        if(max < v[i])
-        {
+        if(max < v[i]) {
             max = v[i];
             val = i;
         }

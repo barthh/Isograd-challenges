@@ -9,8 +9,7 @@ int main() {
 	int n, nbr = 0;
 	scanf("%f %f %f %f %d",&fl,&fi,&tl,&ti,&n) == 0;
 	
-    for(int i = 0; i < n; i++)
-    {
+    for(int i = 0; i < n; i++) {
         float lat,lng;
         scanf("%f %f", &lat, &lng) == 0;
         

@@ -7,8 +7,7 @@ int main() {
 
     int pluie = 0, temp = 0;
     
-    for(int i = 0; i < 24 ; i++)
-    {
+    for(int i = 0; i < 24 ; i++) {
         int t,p;
         scanf("%d %d", &t,&p) == 0 ;
         

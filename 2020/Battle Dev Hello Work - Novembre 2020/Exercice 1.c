@@ -13,8 +13,7 @@ int main() {
     
     int count = 0;
 
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         scanf("%s", &s)== 0 ;
 
         bool ok = true;

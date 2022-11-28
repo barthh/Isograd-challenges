@@ -14,14 +14,11 @@ int main() {
     for(int i = 0; i < 10 ; i++)
         if(s[0][i] != *"#")
             for(int j = 1; j < 20 ; j++)
-                if(s[j][i] == *"#" || j == 19)
-                {
+                if(s[j][i] == *"#" || j == 19) {
                     bool isok = true;
                     for(int k = 0; k < 10; k++)
-                        if(k != i)
-                        {
-                            if(s[j][i] == *"#")
-                            {
+                        if(k != i) {
+                            if(s[j][i] == *"#") {
                                 if(s[j-1][k] == *".") isok = false; //Try last position if '#''
                             }
                             else if(s[j][k] == *".") isok = false; //Try current position if the last is empty

@@ -10,13 +10,11 @@ int main() {
     int nbPages = 1;
     
     while (scanf("%d ", &n) != EOF) {
-        if(n + currHeight > 10)
-        {
+        if(n + currHeight > 10) {
             nbPages++;
             currHeight = n;
         }
-        else
-        {
+        else {
             currHeight += n;   
         }
     }

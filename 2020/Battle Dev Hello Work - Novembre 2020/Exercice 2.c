@@ -11,8 +11,7 @@ int main() {
     int night = 0;
     char s[16];
     
-    for(int i = 0; i < n ; i++)
-    {
+    for(int i = 0; i < n ; i++) {
         int h;
         scanf("%d%s", &h,&s) == 0 ;
         if(h >= 20 || h < 8) night++;

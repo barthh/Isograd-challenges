@@ -16,8 +16,7 @@ int main() {
 
 	for(int i = 0; i < m - 1; i++)
 	    for(int j = 0; j < m - i - 1; j++)
-	        if(b[j] < b[j+1]) 
-	        {
+	        if(b[j] < b[j+1]) {
 	            int c = a[j];
 	            a[j] = a[j+1];
 	            a[j+1] = c;
@@ -29,16 +28,13 @@ int main() {
 
 	int total = 0;
 	
-	for(int d = 0; d < m; d++)
-	{
+	for(int d = 0; d < m; d++) {
         total += a[d];
-      	if(total > n)
-      	{
+      	if(total > n) {
       	    printf("%d",d + 1);
       	    break;
       	}
-      	if(d == m - 1)
-      	{
+      	if(d == m - 1) {
       	    printf("KO");
       	    break;
       	}
